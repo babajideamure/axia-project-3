@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li>${job.contract}</li>
                 <li>${job.location}</li>
               </ul>
+              
             </div>
           </div>
           <div class="jobs-column job-column-right">
@@ -30,6 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         jobsContainer.appendChild(jobElement);
       });
+
+      applyStyles();
     })
     .catch(error => console.error("Error loading job listings:", error));
 });

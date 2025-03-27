@@ -62,8 +62,6 @@ body {
 }
 
 .job-logo {
-  /* width: 50px;
-  height: auto; */
   padding: 10px;
 }
 
@@ -86,18 +84,22 @@ body {
   margin-bottom: 15px;
 }
 
-.jobs-details {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .jobs-details-items {
   display: inline-block;
   font-size: 15px;
   font-weight: 700;
   color: hsl(180, 8%, 52%);
   margin-right: 15px;
+}
+
+.jobs-details {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
 }
 
 .tags, .close-tag {
@@ -171,6 +173,13 @@ body {
     height: auto;
   }
 
+  .jobs-details {
+    flex-direction: row;
+    gap: 1px;
+    font-size: 10px;
+    text-align: center;
+  }
+
   .search-clear {
     margin-left: 0;
     margin-top: 10px;
@@ -220,5 +229,17 @@ body {
   .tags, .close-tag {
     font-size: 10px;
     padding: 6px 10px;
+  }
+
+  .search-content {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .close-tag {
+    font-size: 10px;
+    padding: 4px 10px;
+    width: 100%; 
+    text-align: center;
   }
 }
